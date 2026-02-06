@@ -48,7 +48,7 @@ Here are some of the technologies I use:
 A modern news aggregation app that delivers headlines from trusted sources in clear categories like Tech, Business, Sports & more.
 
 🔗 **Source:** [GitHub](https://github.com/Vamshi-Kasturi/NewSpot)  
-🔗 **Live:** https://newspot-three.vercel.app/
+🔗 **Live:** https://newspot-kappa.vercel.app/
 
 ---
 
