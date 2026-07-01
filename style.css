@@ -440,7 +440,7 @@ span {
 }
 
 .experience .top-hori{
-  width: 90%;
+  width: 70%;
   position: absolute;
   top: 300px;
 }
@@ -1002,6 +1002,11 @@ span {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer-iconTop a {
+    bottom: 30px;
+    right: 30px;
+}
 }
 
 @media (max-width: 639px) {
@@ -1119,6 +1124,10 @@ span {
   .home-content p {
     font-size: 1.8rem;
   }
+
+  .GetINTouchbtn {
+    margin-left: 1rem;
+}
   .about-content p {
     font-size: 1.6rem;
   }
@@ -1151,6 +1160,7 @@ span {
   .navbar a {
     font-size: 1.6rem;
   }
+
 }
 
 
