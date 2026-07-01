@@ -18,8 +18,9 @@
 
 <body>
 
-    <header class="header">
-        <a href="https://www.linkedin.com/in/vamshi-kasturi/" class="logo">Vamshi Kasturi</a>
+
+    <header id="header" class="header">
+        <a href="https://www.linkedin.com/in/vamshi-kasturi/" class="logo" target="_blank">Vamshi Kasturi</a>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
@@ -27,6 +28,8 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
+            <a href="#experience">Experience </a>
+            <!-- <a href="#certification">Certifications</a> -->
             <!-- <a href="#portfolio">Portfolio</a> -->
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -42,18 +45,21 @@
                 with experience in building robust, scalable, and user-friendly web applications. My expertise lies in
                 the MERN stack (MongoDB, Express. js, React, Node.)</p>
             <div class="home-buttons">
+
                 <a href="https://www.instagram.com/_the_vamshi_/" target="_blank"> <i class='bxl  bx-instagram'></i>
                 </a>
                 <a href="https://www.facebook.com/kasturivamshi143" target="_blank"> <i class='bxl  bx-facebook'></i>
                 </a>
                 <a href="https://www.linkedin.com/in/vamshi-kasturi/" target="_blank"> <i class='bxl  bx-linkedin'></i>
                 </a>
-                <a href="https://github.com/Vamshi-Kasturi" target="_blank"> <i class='bxl  bx-github'></i> </a>
+                <a href="https://github.com/Vamshi-Kasturi" target="_blank"> <i class="bxl bx-github"></i>
+                </a>
                 <a href="mailto:kasturivamshi884@gmail.com" target="_blank"> <i class='bxl  bx-gmail'></i> </i>
                 </a>
             </div>
-            <a href="https://drive.google.com/file/d/1cQOQYGZw-HrVAiuS66G-55_m_bj8a7JT/view?usp=sharing" target="_blank"
-                class="btn">Download Resume </a> <i class="down-icon fa-solid fa-download"></i>
+            <a href="https://drive.google.com/file/d/1eG4Bb5mWZfA1ar1_5yzp-LQt0kBKvxbE/view?usp=sharing" target="_blank"
+                class="btn"> <i class="down-icon fa-solid fa-download"></i> Download Resume </a>
+            <a href="#contact" target="_blank" class="GetINTouchbtn">Get In Touch </a>
 
         </div>
         <div class="home-img">
@@ -90,8 +96,204 @@
     </section>
 
     <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-container">
+        <h2 class="heading">Top <span>Technologies</span></h2>
+        <div class="skills-filter">
+            <ul class="skill-items">
+                <li class="items " data-filter="all"><i class="fa-solid fa-bolt-lightning"></i> All</li>
+                <li class="items" data-filter="web-dev"><i class="fa-solid fa-code"></i> Web Development</li>
+                <li class="items" data-filter="web-design"><i class="fa-brands fa-connectdevelop"></i> Web Design</li>
+                <li class="items" data-filter="devops-tools"><i class="fa-solid fa-cloud"></i> DevOps & Tools</li>
+                <li class="items" data-filter="prog-lang"><i class="fa-solid fa-laptop-code"></i> Programming</li>
+            </ul>
+        </div>
+        <div class="skills-grid">
+            <div id="skill-card" class=" web-dev skill-card">
+                <i class="fa-brands fa-react"></i>
+                <div class="skill-details">
+                    <p class="name">React JS</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-dev prog-lang skill-card">
+                <i class="fa-brands fa-square-js"></i>
+                <div class="skill-details">
+                    <p class="name">JavaScript</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-dev skill-card">
+                <i class="fa-brands fa-node-js"></i>
+                <div class="skill-details">
+                    <p class="name">Node JS</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-dev skill-card">
+                <i class="bxl bx-express-js"></i>
+                <div class="skill-details">
+                    <p class="name">Express JS</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="prog-lang skill-card">
+                <i class="bxl bx-c"></i>
+                <div class="skill-details">
+                    <p class="name">C</p>
+                    <p class="category">Programming Language</p>
+                </div>
+            </div>
+            <div id="skill-card" class="prog-lang skill-card">
+                <i class="bxl bx-java"></i>
+                <div class="skill-details">
+                    <p class="name">Java</p>
+                    <p class="category">Programming Language</p>
+                </div>
+            </div>
+            <div id="skill-card" class="prog-lang skill-card">
+                <i class="bxl bx-python"></i>
+                <div class="skill-details">
+                    <p class="name">Python</p>
+                    <p class="category">Programming Language</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-dev skill-card">
+                <i class="bxl bx-mongodb"></i>
+                <div class="skill-details">
+                    <p class="name">MongoDB</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-dev skill-card">
+                <i class="fa-brands fa-postgresql"></i>
+                <div class="skill-details">
+                    <p class="name">PostgreSQL</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-dev skill-card">
+                <i class="bxl bx-my-sql"></i>
+                <div class="skill-details">
+                    <p class="name">My SQL</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-dev skill-card">
+                <i class="bxl bx-jquery"></i>
+                <div class="skill-details">
+                    <p class="name">jQuery</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-dev skill-card">
+                <i class="fa-solid fa-hexagon-nodes"></i>
+                <div class="skill-details">
+                    <p class="name">REST API</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-dev skill-card">
+                <i class="bxl bx-jwt"></i>
+                <div class="skill-details">
+                    <p class="name">JWT</p>
+                    <p class="category">Web Development</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-design skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <div class="skill-details">
+                    <p class="name">HTML 5</p>
+                    <p class="category">Web Design</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-design skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <div class="skill-details">
+                    <p class="name">CSS 3</p>
+                    <p class="category">Web Design</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-design skill-card">
+                <i class="fa-brands fa-bootstrap"></i>
+                <div class="skill-details">
+                    <p class="name">Bootstrap</p>
+                    <p class="category">Web Design</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-design skill-card">
+                <i class="fa-solid fa-mobile"></i>
+                <div class="skill-details">
+                    <p class="name">Responsive Design</p>
+                    <p class="category">Web Design</p>
+                </div>
+            </div>
+            <div id="skill-card" class="web-design skill-card">
+                <i class="fa-brands fa-figma"></i>
+                <div class="skill-details">
+                    <p class="name">UI/UX Development</p>
+                    <p class="category">Web Design</p>
+                </div>
+            </div>
+            <div id="skill-card" class="devops-tools skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <div class="skill-details">
+                    <p class="name">Git</p>
+                    <p class="category">Devops & Tools</p>
+                </div>
+            </div>
+            <div id="skill-card" class="devops-tools skill-card">
+                <i class="fa-brands fa-github"></i>
+                <div class="skill-details">
+                    <p class="name">Github</p>
+                    <p class="category">Devops & Tools</p>
+                </div>
+            </div>
+            <div id="skill-card" class="devops-tools skill-card">
+                <i class="bxl bx-vercel"></i>
+                <div class="skill-details">
+                    <p class="name">Vercel</p>
+                    <p class="category">Devops & Tools</p>
+                </div>
+            </div>
+            <div id="skill-card" class="devops-tools skill-card">
+                <i class="fa-solid fa-cloud"></i>
+                <div class="skill-details">
+                    <p class="name">Render</p>
+                    <p class="category">Devops & Tools</p>
+                </div>
+            </div>
+            <div id="skill-card" class="devops-tools skill-card">
+                <i class="bxl bx-netlify"></i>
+                <div class="skill-details">
+                    <p class="name">Netlify</p>
+                    <p class="category">Devops & Tools</p>
+                </div>
+            </div>
+            <div id="skill-card" class="devops-tools skill-card">
+                <i class="fa-solid fa-vial"></i>
+                <div class="skill-details">
+                    <p class="name">Postman</p>
+                    <p class="category">Devops & Tools</p>
+                </div>
+            </div>
+            <div id="skill-card" class="devops-tools skill-card">
+                <i class="fa-solid fa-laptop"></i>
+                <div class="skill-details">
+                    <p class="name">TurboRepo</p>
+                    <p class="category">Devops & Tools</p>
+                </div>
+            </div>
+            <div id="skill-card" class="devops-tools skill-card">
+                <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                <div class="skill-details">
+                    <p class="name">n8n</p>
+                    <p class="category">Devops & Tools</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- <div class="skills-container">
             <div class="skills-box">
                 <h3>Front-End</h3>
                 <div class="brand-icons">
@@ -188,11 +390,79 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
     </section>
 
+    <section class="experience" id="experience">
+        <h2 class="heading">Experience<span> Timeline</span></h2>
+        <div class="exp-line top-hori"></div>
+        <div class="exp-line buttom-hori"></div>
+        <div class="exp-grid">
+            <a href="https://drive.google.com/file/d/1WeyeWRZbqY9VVUUxQlQsEH-i5qojTBS-/view?usp=sharing"
+                target="_blank">
+                <div class="exp-card">
+                    <h3 class="title">Web Developer</h3>
+                    <p class="company">Internship Studio</p>
+                    <p class="duration">Oct 2025 - Nov 2025</p>
+                    <p class="desc">Built a fully functional E-Commerce website from scratch using HTML, CSS, Bootstrap,
+                        JavaScript, and jQuery during my internship.</p>
+                    <div class="line"></div>
+                    <p class="sm-desc"><i class="fa-solid fa-arrow-right"></i> Strengthened my web development skills.
+                    </p>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1g6oCCprFDBE4Aa3sYXSrDaaT9U7WtFo1/view?usp=sharing"
+                target="_blank">
+                <div class="exp-card">
+                    <h3 class="title">Frontend Developer</h3>
+                    <p class="company">Saiket Systems</p>
+                    <p class="duration">Oct 2025 - Nov 2025</p>
+                    <p class="desc">Built responsive web projects using HTML, CSS, and JavaScript.
+                        Strengthened my front-end development and problem-solving skills.</p>
+                    <div class="line"></div>
+                    <p class="sm-desc"><i class="fa-solid fa-arrow-right"></i> Gained hands-on front-end development
+                        experience.</p>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1sXRXu2AzE5oZzbJx_Yzb45q7sAKZn5V6/view?usp=sharing"
+                target="_blank">
+                <div class="exp-card">
+                    <h3 class="title">AI Data Annotation Intern</h3>
+                    <p class="company">SynchroServe Global Solutions Private Limited</p>
+                    <p class="duration">Nov 2025 - Feb 2026</p>
+                    <p class="desc">Annotated high-quality datasets for AI and machine learning models.</p>
+                    <div class="line"></div>
+                    <p class="sm-desc"><i class="fa-solid fa-arrow-right"></i> Ensured high-quality annotated data for
+                        AI and ML applications.</p>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </a>
+            <a href="#experience">
+                <div class="exp-card">
+                    <h3 class="title">FullStack Developer</h3>
+                    <p class="company">Knowvation Learnings</p>
+                    <p class="duration">Jun 2026 - Jul 2026</p>
+                    <p class="desc">Developed and tested React applications, ensuring functionality through bug
+                        reporting and quality assurance.</p>
+                    <div class="line"></div>
+                    <p class="sm-desc"><i class="fa-solid fa-arrow-right"></i> Developed and tested modern React
+                        applications.</p>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </a>
+        </div>
+
+
+    </section>
+
+    <!-- <section class="certification" id="certification">
+        <h2 class="heading">Certifications</h2>
+    </section> -->
+
     <section class="projects" id="projects">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+        <h2 class="heading">Featured <span>Projects</span></h2>
         <div class="projects-container">
             <div class="projects-card">
                 <div class="img-container">
@@ -204,10 +474,11 @@
                         trusted sources into one simple, fast, and easy-to-use platform.Organizes news into clear
                         categories like Technology, Business, Sports, Entertainment, and World</p>
                     <div class="tech-used">
+                        <p class="badge">React JS</p>
+                        <p class="badge">Java Script</p>
+                        <p class="badge">API</p>
                         <p class="badge">HTML5</p>
                         <p class="badge">CSS3</p>
-                        <p class="badge">Java Script</p>
-                        <p class="badge">React JS</p>
                     </div>
                     <div class="links-divs">
                         <a class="btn" target="_blank" href="https://github.com/Vamshi-Kasturi/NewSpot"><i
@@ -219,7 +490,59 @@
             </div>
             <div class="projects-card">
                 <div class="img-container">
-                    <img src="./images/companyMain.png" alt="">
+                    <img src="./images/SecureVault.png" alt="">
+                </div>
+                <div class="img-content">
+                    <h4>Secure Vault</h4>
+                    <p> <b>Secure File Storage System </b> - A secure file storage platform with encrypted uploads,
+                        role-based access control (RBAC), and safe file management for authorized users.</p>
+                    <div class="tech-used">
+                        <p class="badge">React</p>
+                        <p class="badge">Java Script</p>
+                        <p class="badge">Node JS</p>
+                        <p class="badge">Express JS</p>
+                        <p class="badge">Mongo DB</p>
+                        <p class="badge">JWT</p>
+                        <p class="badge">File Handling</p>
+                        <p class="badge">AES-256 Encryption</p>
+                    </div>
+                    <div class="links-divs">
+                        <a class="btn" target="_blank" href="https://github.com/Vamshi-Kasturi/SecureVault"><i
+                                class="fa-brands fa-github"></i> Source Code </a>
+                        <a class="btn" target="_blank" href="https://securevault-frontend-o34p.onrender.com/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Visit SecureVault </a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-card">
+                <div class="img-container">
+                    <img src="./images/ChronoAI.png" alt="">
+                </div>
+                <div class="img-content">
+                    <h4>ChronoAI</h4>
+                    <p> <b>Time Management Assistant </b> - An AI-powered time management assistant using n8n and Gemini
+                        AI.
+                        Automated workflows and generated personalized schedules based on user priorities.</p>
+                    <div class="tech-used">
+                        <p class="badge">ActivePieces</p>
+                        <p class="badge">Gemini AI</p>
+                        <p class="badge">Google Forms</p>
+                        <p class="badge">Google Sheets</p>
+                        <p class="badge">Google Mails</p>
+                        <p class="badge">Prompt Engineering </p>
+                    </div>
+                    <div class="links-divs">
+                        <a class="btn" target="_blank"
+                            href="https://cloud.activepieces.com/templates/zJPB1FbtPdh24rSzXc2cL"><i
+                                class="fa-brands fa-github"></i> Template Link </a>
+                        <a class="btn" target="_blank" href="https://forms.gle/Rzyq9VTpYL5RQwyb9"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo </a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-card">
+                <div class="img-container">
+                    <img src="./images/WearCart.png" alt="">
                 </div>
                 <div class="img-content">
                     <h4>WearCart</h4>
@@ -229,9 +552,11 @@
                         sections — delivering a seamless user experience on desktop and mobile.
                     </p>
                     <div class="tech-used">
+                        <p class="badge">Java Script</p>
+                        <p class="badge">UI/UX</p>
+                        <p class="badge">Responsive Design</p>
                         <p class="badge">HTML5</p>
                         <p class="badge">CSS3</p>
-                        <p class="badge">Java Script</p>
                     </div>
                     <div class="links-divs">
                         <a class="btn" target="_blank" href="https://github.com/Vamshi-Kasturi/wearcart"><i
@@ -243,7 +568,7 @@
             </div>
             <div class="projects-card">
                 <div class="img-container">
-                    <img src="./images/portfolio.jpg" alt="">
+                    <img src="./images/Portfolio.png" alt="">
                 </div>
                 <div class="img-content">
                     <h4>Portfolio</h4>
@@ -286,16 +611,17 @@
 
     <footer class="footer" id="footer">
         <div class="footer-content">
-            <p> Copyright &copy; <span id="span-year"> </span> by <a href="https://www.linkedin.com/in/vamshi-kasturi/"
-                    target="_blank">Vamshi
-                    Kasturi</a> | All Rights Reserved </p>
+            <p> Copyright &copy; <span id="span-year"> </span> | All Rights Reserved </p>
         </div>
-
-        <div class="footer-iconTop">
-            <a href="#"> <i class="fa-solid fa-arrow-up"></i> </a>
+        <div class="credits">
+            <p>Made with ❤️ by <a href="https://www.linkedin.com/in/vamshi-kasturi/" target="_blank"> Vamshi
+                    Kasturi</a> </p>
         </div>
     </footer>
 
+    <div class="footer-iconTop">
+        <a href="#"> <i class="fa-solid fa-arrow-up"></i> </a>
+    </div>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>

@@ -9,6 +9,19 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
+//navbar blur on scroll
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 80) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+
+});
+
 // active sections 
 
 let sections = document.querySelectorAll('section');
@@ -62,7 +75,7 @@ ScrollReveal().reveal('.home-content p, ', { origin: 'right' });
 // typed js 
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Backend Developer'],
+    strings: ['Frontend Developer', 'Backend Developer', 'Fullstack Developer','Web Developer', 'Web Designer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -77,3 +90,72 @@ let Year = today.getFullYear();
 
 let spanYear = document.querySelector('#span-year');
 spanYear.innerHTML = Year;
+
+
+
+// //active skill tab
+// const items = document.querySelectorAll(".skill-items .items");
+
+// items.forEach(item => {
+//     item.addEventListener("click", () => {
+//         // Remove active class from all items
+//         items.forEach(i => i.classList.remove("active-tab"));
+
+//         // Add active class to the clicked item
+//         item.classList.add("active-tab");
+//     });
+// });
+
+//Skill cards rendering
+const tabs = document.querySelectorAll(".skill-items .items");
+const cards = document.querySelectorAll(".skill-card");
+
+// Show all skills by default
+cards.forEach(card => {
+    card.style.display = "";
+});
+
+tabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+        // Remove active class
+        tabs.forEach(item => item.classList.remove("active-tab"));
+
+        // Add active class
+        tab.classList.add("active-tab");
+
+        const filter = tab.dataset.filter;
+
+        cards.forEach(card => {
+
+            if (filter === "all") {
+                card.style.display = "";
+            }
+            else if (card.classList.contains(filter)) {
+                card.style.display = "";
+            }
+            else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});
+
+//top botton
+
+topButton = document.querySelector(".footer-iconTop");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 700) {
+        topButton.style.display = "";
+    } else {
+        topButton.style.display = "none";
+    }
+
+});
+
