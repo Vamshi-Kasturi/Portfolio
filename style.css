@@ -224,9 +224,13 @@ span {
   background: var(--second-bg-color);
 }
 
-.about .about-img img {
+/* .about .about-img img {
   height: 30rem;
   margin: 3rem 4rem;
+  animation: floatImage 3s ease-in-out infinite;
+} */
+
+.about .badge-base {
   animation: floatImage 3s ease-in-out infinite;
 }
 
