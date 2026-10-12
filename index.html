@@ -4,659 +4,1014 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vamshi Kasturi - Web Developer</title>
-    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/cb4321962b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Vamshi Kasturi - Full-Stack Developer specializing in MERN stack, modern web applications, and scalable backend architecture. Explore projects, experience, and skills.">
+    <meta name="keywords"
+        content="Vamshi Kasturi, Full-Stack Developer, Web Developer, MERN Stack, React Developer, Node.js, Portfolio">
+    <meta name="author" content="Vamshi Kasturi">
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vamshi Kasturi | Full-Stack Developer">
+    <meta property="og:description"
+        content="Explore my portfolio showcasing modern web apps, full-stack projects, and engineering experience.">
+    <meta property="og:image" content="./images/profile.jpg">
+    <meta property="og:url" content="https://vamshi-kasturi.github.io/Portfolio/">
+
+    <title>Vamshi Kasturi | Full-Stack Developer Portfolio</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Boxicons & FontAwesome CDN -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+    <div class="ambient-glow glow-middle-right" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom-left" aria-hidden="true"></div>
 
-
+    <!-- Header Navigation -->
     <header id="header" class="header">
-        <a href="https://www.linkedin.com/in/vamshi-kasturi/" class="logo" target="_blank">Vamshi Kasturi</a>
+        <a href="#home" class="logo">
+            <span class="logo-mark">&lt;VK/&gt;</span>
+            <span class="logo-text">Vamshi Kasturi</span>
+        </a>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="mobile-toggle" id="menu-icon" aria-label="Toggle Navigation Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience </a>
-            <!-- <a href="#certification">Certifications</a> -->
-            <!-- <a href="#portfolio">Portfolio</a> -->
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Vamshi Kasturi</h1>
-            <h3>And I'm a <span class="multiple-text"></span> </h3>
-            <p> I am a passionate Full-Stack Developer. <br>
-                with experience in building robust, scalable, and user-friendly web applications. My expertise lies in
-                the MERN stack (MongoDB, Express. js, React, Node.)</p>
-            <div class="home-buttons">
+    <main>
+        <!-- Hero Section -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <div class="badge-pill">
+                    <span class="pulse-dot"></span>
+                    <span>Available for Full-Stack Opportunities</span>
+                </div>
 
-                <a href="https://www.instagram.com/_thiz_vamshi_/" target="_blank"> <i class='bxl  bx-instagram'></i>
-                </a>
-                <a href="https://wa.me/918897634760?text=Hi%20Vamshi,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
-   target="_blank"
-   class="whatsapp">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
-                <a href="https://www.linkedin.com/in/vamshi-kasturi/" target="_blank"> <i class='bxl  bx-linkedin'></i>
-                </a>
-                <a href="https://github.com/Vamshi-Kasturi" target="_blank"> <i class="bxl bx-github"></i>
-                </a>
-                <a href="mailto:kasturivamshi884@gmail.com" target="_blank"> <i class='bxl  bx-gmail'></i> </i>
-                </a>
-            </div>
-            <a href="https://drive.google.com/file/d/11YQOQDVvh4owyK6K-SVt840PivR4kd6M/view?usp=sharing" target="_blank"
-                class="btn"> <i class="down-icon fa-solid fa-download"></i> Download Resume </a>
-            <a href="#contact" class="GetINTouchbtn">Get In Touch </a>
+                <h3 class="hero-intro">Hello, It's Me</h3>
+                <h1 class="hero-title">Vamshi <span class="gradient-text">Kasturi</span></h1>
+                <h3 class="hero-subtitle">And I'm a <span class="multiple-text"></span></h3>
 
-        </div>
-        <div class="home-img">
-            <img src="./images/profile.jpg" alt="Home Image" />
-        </div>
-    </section>
+                <p class="hero-description">
+                    Passionate <strong>Full-Stack Developer</strong> and Computer Science Engineering student with
+                    practical experience building scalable, responsive, and user-centric web applications using the
+                    <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js) and modern cloud technologies.
+                </p>
 
-    <section class="about" id="about">
-        <!-- <div class="about-img">
-            <img src="images/about.png" alt="Home Image" />
-        </div> -->
+                <div class="home-buttons">
+                    <a href="https://github.com/Vamshi-Kasturi" target="_blank" rel="noopener noreferrer"
+                        class="social-btn" title="GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vamshi-kasturi/" target="_blank" rel="noopener noreferrer"
+                        class="social-btn" title="LinkedIn">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="mailto:kasturivamshi884@gmail.com" class="social-btn" title="Email Me">
+                        <i class="bx bx-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/918897634760?text=Hi%20Vamshi,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+                        target="_blank" rel="noopener noreferrer" class="social-btn whatsapp-btn" title="WhatsApp Chat">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_thiz_vamshi_/" target="_blank" rel="noopener noreferrer"
+                        class="social-btn" title="Instagram">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </div>
 
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="vamshi-kasturi" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/vamshi-kasturi?trk=profile-badge"></a></div>
-
-        <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="vamshi-kasturi" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/vamshi-kasturi?trk=profile-badge"></a></div> -->
-              
-              
-        <div class="about-content">
-            <h2 class="heading">About<span> Me</span></h2>
-            <h3> Full-Stack Developer </h3>
-            <p>Computer Science Engineering student and Full Stack Developer with hands-on experience in building and
-                deploying complete web
-                applications and exploring Web Dev tools through academic projects and self-initiated learning. <br>
-                <br>
-
-                Skilled
-                in front-end development with
-                React.js and Java Script and Back-end with Node.js and Express.js. Proficient in implementing
-                authentication, authorization, and
-                database management using MongoDB, PostgreSQL, and MySQL. Demonstrated ability to design and develop
-                efficient, user-friendly
-                systems — including a Secure File Storage System built during academic projects. <br>
-                <br>
-                Eager to contribute my
-                technical skills and
-                enthusiasm to your organization’s growth as an intern while gaining practical industry experience.
-            </p>
-            <a href="https://www.linkedin.com/in/vamshi-kasturi/" target="_blank" class="btn">Read More</a>
-        </div>
-    </section>
-
-    <section class="skills" id="skills">
-        <h2 class="heading">Top <span>Technologies</span></h2>
-        <div class="skills-filter">
-            <ul class="skill-items">
-                <li class="items " data-filter="all"><i class="fa-solid fa-bolt-lightning"></i> All</li>
-                <li class="items" data-filter="web-dev"><i class="fa-solid fa-code"></i> Web Development</li>
-                <li class="items" data-filter="web-design"><i class="fa-brands fa-connectdevelop"></i> Web Design</li>
-                <li class="items" data-filter="devops-tools"><i class="fa-solid fa-cloud"></i> DevOps & Tools</li>
-                <li class="items" data-filter="prog-lang"><i class="fa-solid fa-laptop-code"></i> Programming</li>
-            </ul>
-        </div>
-        <div class="skills-grid">
-            <div id="skill-card" class=" web-dev skill-card">
-                <i class="fa-brands fa-react"></i>
-                <div class="skill-details">
-                    <p class="name">React JS</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev prog-lang skill-card">
-                <i class="fa-brands fa-square-js"></i>
-                <div class="skill-details">
-                    <p class="name">JavaScript</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="fa-brands fa-node-js"></i>
-                <div class="skill-details">
-                    <p class="name">Node JS</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="bxl bx-express-js"></i>
-                <div class="skill-details">
-                    <p class="name">Express JS</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="prog-lang skill-card">
-                <i class="bxl bx-c"></i>
-                <div class="skill-details">
-                    <p class="name">C</p>
-                    <p class="category">Programming Language</p>
-                </div>
-            </div>
-            <div id="skill-card" class="prog-lang skill-card">
-                <i class="bxl bx-java"></i>
-                <div class="skill-details">
-                    <p class="name">Java</p>
-                    <p class="category">Programming Language</p>
-                </div>
-            </div>
-            <div id="skill-card" class="prog-lang skill-card">
-                <i class="bxl bx-python"></i>
-                <div class="skill-details">
-                    <p class="name">Python</p>
-                    <p class="category">Programming Language</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="bxl bx-typescript"></i>
-                <div class="skill-details">
-                    <p class="name">Type Script</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="bxl bx-next-js"></i>
-                <div class="skill-details">
-                    <p class="name">Next JS</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="bxl bx-mongodb"></i>
-                <div class="skill-details">
-                    <p class="name">MongoDB</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="fa-brands fa-postgresql"></i>
-                <div class="skill-details">
-                    <p class="name">PostgreSQL</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="bxl bx-my-sql"></i>
-                <div class="skill-details">
-                    <p class="name">My SQL</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="bxl bx-jquery"></i>
-                <div class="skill-details">
-                    <p class="name">jQuery</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="fa-solid fa-hexagon-nodes"></i>
-                <div class="skill-details">
-                    <p class="name">REST API</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-dev skill-card">
-                <i class="bxl bx-jwt"></i>
-                <div class="skill-details">
-                    <p class="name">JWT</p>
-                    <p class="category">Web Development</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-design skill-card">
-                <i class="fa-brands fa-html5"></i>
-                <div class="skill-details">
-                    <p class="name">HTML 5</p>
-                    <p class="category">Web Design</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-design skill-card">
-                <i class="fa-brands fa-css3-alt"></i>
-                <div class="skill-details">
-                    <p class="name">CSS 3</p>
-                    <p class="category">Web Design</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-design skill-card">
-                <i class="fa-brands fa-bootstrap"></i>
-                <div class="skill-details">
-                    <p class="name">Bootstrap</p>
-                    <p class="category">Web Design</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-design skill-card">
-                <i class="bxl bx-tailwind-css"></i>
-                <div class="skill-details">
-                    <p class="name">Tailwind CSS</p>
-                    <p class="category">Web Design</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-design skill-card">
-                <i class="fa-solid fa-mobile"></i>
-                <div class="skill-details">
-                    <p class="name">Responsive Design</p>
-                    <p class="category">Web Design</p>
-                </div>
-            </div>
-            <div id="skill-card" class="web-design skill-card">
-                <i class="fa-brands fa-figma"></i>
-                <div class="skill-details">
-                    <p class="name">UI/UX Development</p>
-                    <p class="category">Web Design</p>
-                </div>
-            </div>
-            <div id="skill-card" class="devops-tools skill-card">
-                <i class="fa-brands fa-git-alt"></i>
-                <div class="skill-details">
-                    <p class="name">Git</p>
-                    <p class="category">Devops & Tools</p>
-                </div>
-            </div>
-            <div id="skill-card" class="devops-tools skill-card">
-                <i class="fa-brands fa-github"></i>
-                <div class="skill-details">
-                    <p class="name">Github</p>
-                    <p class="category">Devops & Tools</p>
-                </div>
-            </div>
-            <div id="skill-card" class="devops-tools skill-card">
-                <i class="bxl bx-vercel"></i>
-                <div class="skill-details">
-                    <p class="name">Vercel</p>
-                    <p class="category">Devops & Tools</p>
-                </div>
-            </div>
-            <div id="skill-card" class="devops-tools skill-card">
-                <i class="fa-solid fa-cloud"></i>
-                <div class="skill-details">
-                    <p class="name">Render</p>
-                    <p class="category">Devops & Tools</p>
-                </div>
-            </div>
-            <div id="skill-card" class="devops-tools skill-card">
-                <i class="bxl bx-netlify"></i>
-                <div class="skill-details">
-                    <p class="name">Netlify</p>
-                    <p class="category">Devops & Tools</p>
-                </div>
-            </div>
-            <div id="skill-card" class="devops-tools skill-card">
-                <i class="fa-solid fa-vial"></i>
-                <div class="skill-details">
-                    <p class="name">Postman</p>
-                    <p class="category">Devops & Tools</p>
-                </div>
-            </div>
-            <div id="skill-card" class="devops-tools skill-card">
-                <i class="fa-solid fa-laptop"></i>
-                <div class="skill-details">
-                    <p class="name">TurboRepo</p>
-                    <p class="category">Devops & Tools</p>
-                </div>
-            </div>
-            <div id="skill-card" class="devops-tools skill-card">
-                <i class="fa-solid fa-arrows-split-up-and-left"></i>
-                <div class="skill-details">
-                    <p class="name">n8n</p>
-                    <p class="category">Devops & Tools</p>
+                <div class="hero-actions">
+                    <a href="https://drive.google.com/file/d/11YQOQDVvh4owyK6K-SVt840PivR4kd6M/view?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-regular fa-paper-plane"></i> Get In Touch
+                    </a>
                 </div>
             </div>
 
-        </div>
+            <div class="home-img-wrapper">
+                <div class="avatar-glow-ring"></div>
+                <div class="home-img">
+                    <img src="./images/profile.jpg" alt="Vamshi Kasturi - Full Stack Developer Profile"
+                        loading="eager" />
+                </div>
+                <!-- Floating Tech Badges -->
+                <div class="floating-chip chip-mern">
+                    <i class="fa-brands fa-react"></i>
+                    <span>MERN Stack</span>
+                </div>
+                <div class="floating-chip chip-code">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Clean Code</span>
+                </div>
+            </div>
+        </section>
 
-
-        <!-- <div class="skills-container">
-            <div class="skills-box">
-                <h3>Front-End</h3>
-                <div class="brand-icons">
-                    <div class="brand-small">
-                        <p><i class="fa-brands fa-react"></i>React </p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class="fa-brands fa-html5"></i> HTML</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class="fa-brands fa-js"></i> JavaScript</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class="fa-brands fa-bootstrap"></i> Bootstrap</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-box">
-                <h3>Back-End</h3>
-                <div class="brand-icons">
-                    <div class="brand-small">
-                        <p><i class="fa-brands fa-node-js"></i> Node.js </p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-express-js'></i> Express.js</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class="fa-solid fa-shield-halved"></i> Authentication</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class="fa-solid fa-lock"></i> Authorization</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class="fa-solid fa-link"></i>API's</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-box">
-                <h3>Data Bases</h3>
-                <div class="brand-icons">
-                    <h5>NoSQL</h5>
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-mongodb'></i> MongoDB </p>
-                    </div>
-                    <h5>SQL</h5>
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-postgresql'></i> PostgreSQL</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-my-sql'></i> MySQL</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-box">
-                <h3>Version Control</h3>
-                <div class="brand-icons">
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-git'></i> Git</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-github'></i> GitHub</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-box">
-                <h3>Hosting</h3>
-                <div class="brand-icons">
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-vercel'></i> Vercel </p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-google-cloud'></i> Render</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-netlify'></i>Netlify </p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-box">
-                <h3>Languages</h3>
-                <div class="brand-icons">
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-python'></i> Python</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-c'></i> C</p>
-                    </div>
-                    <div class="brand-small">
-                        <p><i class='bxl  bx-java'></i> Java</p>
-                    </div>
-                </div>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-header">
+                <span class="section-tag">Know More</span>
+                <h2 class="heading">About <span class="gradient-text">Me</span></h2>
             </div>
 
-        </div> -->
-    </section>
+            <div class="about-grid">
+                <!-- Visual / Highlights Card -->
+                <div class="about-card glass-panel">
+                    <div class="about-card-header">
+                        <div class="avatar-small">
+                            <img src="./images/profile.jpg" alt="Vamshi Kasturi">
+                        </div>
+                        <div class="about-card-titles">
+                            <h3>Vamshi Kasturi</h3>
+                            <p class="role-highlight">Full-Stack Web Developer</p>
+                            <span class="status-indicator">
+                                <span class="pulse-dot"></span> B.Tech CSE &bull; 8.61 CGPA
+                            </span>
+                        </div>
+                    </div>
 
-    <section class="experience" id="experience">
-        <h2 class="heading">Experience<span> Timeline</span></h2>
-        <div class="exp-line top-hori"></div>
-        <div class="exp-line buttom-hori"></div>
-        <div class="exp-grid">
-            <a href="https://drive.google.com/file/d/1WeyeWRZbqY9VVUUxQlQsEH-i5qojTBS-/view?usp=sharing"
-                target="_blank">
-                <div class="exp-card">
-                    <h3 class="title">Web Developer</h3>
-                    <p class="company">Internship Studio</p>
-                    <p class="duration">Oct 2025 - Nov 2025</p>
-                    <p class="desc">Built a fully functional E-Commerce website from scratch using HTML, CSS, Bootstrap,
-                        JavaScript, and jQuery during my internship.</p>
-                    <div class="line"></div>
-                    <p class="sm-desc"><i class="fa-solid fa-arrow-right"></i> Strengthened my web development skills.
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Full Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Tech Tools</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8.61</span>
+                            <span class="stat-label">B.Tech CGPA</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card-footer">
+                        <a href="https://www.linkedin.com/in/vamshi-kasturi/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-full">
+                            <i class="bx bxl-linkedin"></i> Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Text Story Content -->
+                <div class="about-content glass-panel">
+                    <h3>Crafting Scalable, Modern & High-Performance Web Applications</h3>
+                    <p>
+                        I am a <strong>Computer Science Engineering student</strong> with a <strong>strong academic record of 8.61 CGPA</strong> and a hands-on <strong>Full-Stack Developer</strong> dedicated to turning complex problems into elegant, user-friendly digital solutions.
                     </p>
-                    <i class="fa-solid fa-link"></i>
-                </div>
-            </a>
-            <a href="https://drive.google.com/file/d/1g6oCCprFDBE4Aa3sYXSrDaaT9U7WtFo1/view?usp=sharing"
-                target="_blank">
-                <div class="exp-card">
-                    <h3 class="title">Frontend Developer</h3>
-                    <p class="company">Saiket Systems</p>
-                    <p class="duration">Oct 2025 - Nov 2025</p>
-                    <p class="desc">Built responsive web projects using HTML, CSS, and JavaScript.
-                        Strengthened my front-end development and problem-solving skills.</p>
-                    <div class="line"></div>
-                    <p class="sm-desc"><i class="fa-solid fa-arrow-right"></i> Gained hands-on front-end development
-                        experience.</p>
-                    <i class="fa-solid fa-link"></i>
-                </div>
-            </a>
-            <a href="https://drive.google.com/file/d/1sXRXu2AzE5oZzbJx_Yzb45q7sAKZn5V6/view?usp=sharing"
-                target="_blank">
-                <div class="exp-card">
-                    <h3 class="title">AI Data Annotation Intern</h3>
-                    <p class="company">SynchroServe Global Solutions Private Limited</p>
-                    <p class="duration">Nov 2025 - Feb 2026</p>
-                    <p class="desc">Annotated high-quality datasets for AI and machine learning models.</p>
-                    <div class="line"></div>
-                    <p class="sm-desc"><i class="fa-solid fa-arrow-right"></i> Ensured high-quality annotated data for
-                        AI and ML applications.</p>
-                    <i class="fa-solid fa-link"></i>
-                </div>
-            </a>
-            <a href="#experience">
-                <div class="exp-card">
-                    <h3 class="title">FullStack Developer</h3>
-                    <p class="company">Knowvation Learnings</p>
-                    <p class="duration">Jun 2026 - Jul 2026</p>
-                    <p class="desc">Developed and tested React applications, ensuring functionality through bug
-                        reporting and quality assurance.</p>
-                    <div class="line"></div>
-                    <p class="sm-desc"><i class="fa-solid fa-arrow-right"></i> Developed and tested modern React
-                        applications.</p>
-                    <i class="fa-solid fa-link"></i>
-                </div>
-            </a>
-        </div>
-
-
-    </section>
-
-    <!-- <section class="certification" id="certification">
-        <h2 class="heading">Certifications</h2>
-    </section> -->
-
-    <section class="projects" id="projects">
-        <h2 class="heading">Featured <span>Projects</span></h2>
-        <div class="projects-container">
-            <div class="projects-card">
-                <div class="img-container">
-                    <img src="./images/NewSpot.png" alt="">
-                </div>
-                <div class="img-content">
-                    <h4>NewSpot</h4>
-                    <p> <b>NewSpot </b> - Newspot is a modern news aggregation app that brings the latest headlines from
-                        trusted sources into one simple, fast, and easy-to-use platform.Organizes news into clear
-                        categories like Technology, Business, Sports, Entertainment, and World</p>
-                    <div class="tech-used">
-                        <p class="badge">React JS</p>
-                        <p class="badge">Java Script</p>
-                        <p class="badge">API</p>
-                        <p class="badge">HTML5</p>
-                        <p class="badge">CSS3</p>
-                    </div>
-                    <div class="links-divs">
-                        <a class="btn" target="_blank" href="https://github.com/Vamshi-Kasturi/NewSpot"><i
-                                class="fa-brands fa-github"></i> Source Code </a>
-                        <a class="btn" target="_blank" href="https://newspot.vercel.app/"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i> Visit NewSpot </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-card">
-                <div class="img-container">
-                    <img src="./images/SecureVault.png" alt="">
-                </div>
-                <div class="img-content">
-                    <h4>Secure Vault</h4>
-                    <p> <b>Secure File Storage System </b> - A secure file storage platform with encrypted uploads,
-                        role-based access control (RBAC), and safe file management for authorized users.</p>
-                    <div class="tech-used">
-                        <p class="badge">React</p>
-                        <p class="badge">Java Script</p>
-                        <p class="badge">Node JS</p>
-                        <p class="badge">Express JS</p>
-                        <p class="badge">Mongo DB</p>
-                        <p class="badge">JWT</p>
-                        <p class="badge">File Handling</p>
-                        <p class="badge">AES-256 Encryption</p>
-                    </div>
-                    <div class="links-divs">
-                        <a class="btn" target="_blank" href="https://github.com/Vamshi-Kasturi/SecureVault"><i
-                                class="fa-brands fa-github"></i> Source Code </a>
-                        <a class="btn" target="_blank" href="https://securevault-frontend-o34p.onrender.com/"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i> Visit SecureVault </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-card">
-                <div class="img-container">
-                    <img src="./images/ChronoAI.png" alt="">
-                </div>
-                <div class="img-content">
-                    <h4>ChronoAI</h4>
-                    <p> <b>Time Management Assistant </b> - An AI-powered time management assistant using n8n and Gemini
-                        AI.
-                        Automated workflows and generated personalized schedules based on user priorities.</p>
-                    <div class="tech-used">
-                        <p class="badge">ActivePieces</p>
-                        <p class="badge">Gemini AI</p>
-                        <p class="badge">Google Forms</p>
-                        <p class="badge">Google Sheets</p>
-                        <p class="badge">Google Mails</p>
-                        <p class="badge">Prompt Engineering </p>
-                    </div>
-                    <div class="links-divs">
-                        <a class="btn" target="_blank"
-                            href="https://cloud.activepieces.com/templates/zJPB1FbtPdh24rSzXc2cL"><i
-                                class="fa-brands fa-github"></i> Template Link </a>
-                        <a class="btn" target="_blank" href="https://forms.gle/Rzyq9VTpYL5RQwyb9"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-card">
-                <div class="img-container">
-                    <img src="./images/WearCart.png" alt="">
-                </div>
-                <div class="img-content">
-                    <h4>WearCart</h4>
-                    <p><b> Online E-Commerce Website ( Front-End )</b> -
-                        A responsive online store using modern web technologies, featuring a well-structured
-                        product catalog, promotional banners and deals
-                        sections — delivering a seamless user experience on desktop and mobile.
+                    <p>
+                        My core strengths encompass frontend engineering with <strong>React.js</strong> and modern
+                        JavaScript, coupled with robust server-side development using <strong>Node.js</strong> and
+                        <strong>Express.js</strong>. I am proficient in relational and NoSQL databases including
+                        <strong>MongoDB, PostgreSQL, and MySQL</strong>, as well as implementing secure JWT
+                        authentication, role-based access control, and AES encryption.
                     </p>
-                    <div class="tech-used">
-                        <p class="badge">Java Script</p>
-                        <p class="badge">UI/UX</p>
-                        <p class="badge">Responsive Design</p>
-                        <p class="badge">HTML5</p>
-                        <p class="badge">CSS3</p>
-                    </div>
-                    <div class="links-divs">
-                        <a class="btn" target="_blank" href="https://github.com/Vamshi-Kasturi/wearcart"><i
-                                class="fa-brands fa-github"></i> Source Code </a>
-                        <a class="btn" target="_blank" href="https://wearcart.vercel.app/"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i> Visit WearCart </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-card">
-                <div class="img-container">
-                    <img src="./images/Portfolio.png" alt="">
-                </div>
-                <div class="img-content">
-                    <h4>Portfolio</h4>
-                    <p> <b>My Modern Portfolio Website </b> - A modern portfolio website is a dynamic, online platform
-                        that showcases a professional's best
-                        work, skills, and experience to attract clients and employers.</p>
-                    <div class="tech-used">
-                        <p class="badge">HTML5</p>
-                        <p class="badge">CSS3</p>
-                        <p class="badge">Java Script</p>
-                        <p class="badge">Scroll Reveal</p>
-                        <p class="badge">Typed JS </p>
-                    </div>
-                    <div class="links-divs">
-                        <a class="btn" target="_blank" href="https://github.com/Vamshi-Kasturi/Portfolio"><i
-                                class="fa-brands fa-github"></i> Source Code </a>
-                        <a class="btn" target="_blank" href="portfolio-vamshi-kasturi.vercel.app"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i> Visit Portfolio </a>
-                    </div>
-                </div>
-            </div>
-    </section>
+                    <p>
+                        From architecting a full <strong>Secure File Storage System</strong> to developing responsive
+                        e-commerce interfaces and automated AI scheduling pipelines with <strong>n8n & Gemini
+                            AI</strong>, I combine rigorous academic fundamentals with practical problem-solving to deliver high-quality engineering.
+                    </p>
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="https://api.web3forms.com/submit" method="POST" class="form">
-            <input type="hidden" name="access_key" value="10a1130e-3587-40b9-90bd-b5ca159985c5">
-            <div class="input-box">
-                <input type="text" name="Full Name" placeholder="Full Name">
-                <input type="email" name="Email Address" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" name="Mobile Number" placeholder="Mobile Number">
-                <input type="text" name="Email Subject" placeholder="Email Subject">
-            </div>
-            <textarea name="Message" id="" rows="10" cols="30" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn btn-sub">
-        </form>
-    </section>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>B.Tech in CSE (8.61 CGPA)</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Clean, Maintainable Architecture</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Mobile-First Responsive Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Secure APIs & Authentication</span>
+                        </div>
+                    </div>
 
+                    <div class="about-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-laptop-code"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fa-regular fa-comment-dots"></i> Let's Talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="heading">Tech <span class="gradient-text">Stack</span></h2>
+                <p class="section-subtitle">Technologies and tools I utilize to craft modern, scalable applications</p>
+            </div>
+
+            <div class="skills-filter">
+                <ul class="skill-items" role="tablist">
+                    <li class="items active-tab" data-filter="all"><i class="fa-solid fa-bolt-lightning"></i> All</li>
+                    <li class="items" data-filter="web-dev"><i class="fa-solid fa-code"></i> Web Development</li>
+                    <li class="items" data-filter="web-design"><i class="fa-brands fa-connectdevelop"></i> Web Design
+                    </li>
+                    <li class="items" data-filter="devops-tools"><i class="fa-solid fa-cloud"></i> DevOps & Tools</li>
+                    <li class="items" data-filter="prog-lang"><i class="fa-solid fa-laptop-code"></i> Programming</li>
+                </ul>
+            </div>
+
+            <div class="skills-grid">
+                <!-- React JS -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">React JS</p>
+                        <p class="category">Frontend Library</p>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card web-dev prog-lang glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-square-js"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">JavaScript</p>
+                        <p class="category">Core Language (ES6+)</p>
+                    </div>
+                </div>
+
+                <!-- Node JS -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-node-js"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Node.js</p>
+                        <p class="category">Runtime Environment</p>
+                    </div>
+                </div>
+
+                <!-- Express JS -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="bx bxl-nodejs"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Express.js</p>
+                        <p class="category">Backend Framework</p>
+                    </div>
+                </div>
+
+                <!-- TypeScript -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="bx bxl-typescript"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">TypeScript</p>
+                        <p class="category">Typed JavaScript</p>
+                    </div>
+                </div>
+
+                <!-- Next JS -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-n"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Next.js</p>
+                        <p class="category">React Framework</p>
+                    </div>
+                </div>
+
+                <!-- MongoDB -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="bx bxl-mongodb"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">MongoDB</p>
+                        <p class="category">NoSQL Database</p>
+                    </div>
+                </div>
+
+                <!-- PostgreSQL -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">PostgreSQL</p>
+                        <p class="category">Relational Database</p>
+                    </div>
+                </div>
+
+                <!-- MySQL -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">MySQL</p>
+                        <p class="category">Relational Database</p>
+                    </div>
+                </div>
+
+                <!-- REST API -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">REST APIs</p>
+                        <p class="category">API Architecture</p>
+                    </div>
+                </div>
+
+                <!-- JWT & Auth -->
+                <div class="skill-card web-dev glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">JWT & Auth</p>
+                        <p class="category">Security & RBAC</p>
+                    </div>
+                </div>
+
+                <!-- HTML5 -->
+                <div class="skill-card web-design glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">HTML5</p>
+                        <p class="category">Semantic Markup</p>
+                    </div>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="skill-card web-design glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">CSS3</p>
+                        <p class="category">Modern Styling</p>
+                    </div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="skill-card web-design glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="bx bxl-tailwind-css"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Tailwind CSS</p>
+                        <p class="category">Utility Framework</p>
+                    </div>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="skill-card web-design glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-bootstrap"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Bootstrap</p>
+                        <p class="category">CSS Framework</p>
+                    </div>
+                </div>
+
+                <!-- Responsive Design -->
+                <div class="skill-card web-design glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Responsive Design</p>
+                        <p class="category">Mobile-First UI</p>
+                    </div>
+                </div>
+
+                <!-- UI/UX & Figma -->
+                <div class="skill-card web-design glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-figma"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">UI/UX & Figma</p>
+                        <p class="category">Prototyping & Design</p>
+                    </div>
+                </div>
+
+                <!-- Git -->
+                <div class="skill-card devops-tools glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Git</p>
+                        <p class="category">Version Control</p>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="skill-card devops-tools glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">GitHub</p>
+                        <p class="category">Collaboration & CI</p>
+                    </div>
+                </div>
+
+                <!-- Vercel -->
+                <div class="skill-card devops-tools glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Vercel</p>
+                        <p class="category">Cloud Deployment</p>
+                    </div>
+                </div>
+
+                <!-- Render -->
+                <div class="skill-card devops-tools glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Render</p>
+                        <p class="category">Backend Hosting</p>
+                    </div>
+                </div>
+
+                <!-- Postman -->
+                <div class="skill-card devops-tools glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-vial"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Postman</p>
+                        <p class="category">API Testing</p>
+                    </div>
+                </div>
+
+                <!-- n8n & Workflow Automation -->
+                <div class="skill-card devops-tools glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">n8n / AI Workflows</p>
+                        <p class="category">Automation Pipelines</p>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="skill-card prog-lang glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="bx bxl-python"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Python</p>
+                        <p class="category">Programming Language</p>
+                    </div>
+                </div>
+
+                <!-- Java -->
+                <div class="skill-card prog-lang glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="bx bxl-java"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">Java</p>
+                        <p class="category">Object-Oriented Prog</p>
+                    </div>
+                </div>
+
+                <!-- C -->
+                <div class="skill-card prog-lang glass-panel">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-copyright"></i>
+                    </div>
+                    <div class="skill-details">
+                        <p class="name">C</p>
+                        <p class="category">Programming Language</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section class="experience" id="experience">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="heading">Experience <span class="gradient-text">Timeline</span></h2>
+                <p class="section-subtitle">Practical industry internships and professional development roles</p>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Item 1: Knowvation Learnings -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-card glass-panel">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Software Developer</h3>
+                                <p class="company-name">Knowvation Learnings</p>
+                            </div>
+                            <span class="duration-badge">Jun 2026 - Present</span>
+                        </div>
+                        <p class="role-desc">
+                            Developed and thoroughly tested React applications, ensuring smooth user experience,
+                            responsive UI components, and continuous quality assurance through comprehensive bug
+                            tracking.
+                        </p>
+                        <div class="role-highlights">
+                            <span class="highlight-tag"><i class="fa-solid fa-check"></i> React.js QA</span>
+                            <span class="highlight-tag"><i class="fa-solid fa-check"></i> Bug Reporting</span>
+                            <span class="highlight-tag"><i class="fa-solid fa-check"></i> Full-Stack Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: SynchroServe Global Solutions -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div class="timeline-card glass-panel">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">AI Data Annotation Intern</h3>
+                                <p class="company-name">SynchroServe Global Solutions Private Limited</p>
+                            </div>
+                            <span class="duration-badge">Nov 2025 - Feb 2026</span>
+                        </div>
+                        <p class="role-desc">
+                            Annotated and structured high-precision datasets for training modern AI and machine learning
+                            models, adhering to strict data quality and formatting standards.
+                        </p>
+                        <div class="role-highlights">
+                            <span class="highlight-tag"><i class="fa-solid fa-check"></i> AI/ML Datasets</span>
+                            <span class="highlight-tag"><i class="fa-solid fa-check"></i> Quality Verification</span>
+                        </div>
+                        <div class="timeline-footer">
+                            <a href="https://drive.google.com/file/d/1sXRXu2AzE5oZzbJx_Yzb45q7sAKZn5V6/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer" class="cert-link">
+                                <i class="fa-solid fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Saiket Systems -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-card glass-panel">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Frontend Developer</h3>
+                                <p class="company-name">Saiket Systems</p>
+                            </div>
+                            <span class="duration-badge">Oct 2025 - Nov 2025</span>
+                        </div>
+                        <p class="role-desc">
+                            Engineered responsive, interactive web interfaces using HTML, CSS, and modern JavaScript.
+                            Focused on cross-device layout optimization and front-end performance tuning.
+                        </p>
+                        <div class="role-highlights">
+                            <span class="highlight-tag"><i class="fa-solid fa-check"></i> Responsive UI</span>
+                            <span class="highlight-tag"><i class="fa-solid fa-check"></i> JavaScript Logic</span>
+                        </div>
+                        <div class="timeline-footer">
+                            <a href="https://drive.google.com/file/d/1g6oCCprFDBE4Aa3sYXSrDaaT9U7WtFo1/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer" class="cert-link">
+                                <i class="fa-solid fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Internship Studio -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="timeline-card glass-panel">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Web Developer</h3>
+                                <p class="company-name">Internship Studio</p>
+                            </div>
+                            <span class="duration-badge">Oct 2025 - Nov 2025</span>
+                        </div>
+                        <p class="role-desc">
+                            Built a fully functional E-Commerce web platform from scratch using HTML5, CSS3, Bootstrap,
+                            JavaScript, and jQuery with dynamic product listings and promotional banners.
+                        </p>
+                        <div class="role-highlights">
+                            <span class="highlight-tag"><i class="fa-solid fa-check"></i> E-Commerce Platform</span>
+                            <span class="highlight-tag"><i class="fa-solid fa-check"></i> Full Lifecycle Dev</span>
+                        </div>
+                        <div class="timeline-footer">
+                            <a href="https://drive.google.com/file/d/1WeyeWRZbqY9VVUUxQlQsEH-i5qojTBS-/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer" class="cert-link">
+                                <i class="fa-solid fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-header">
+                <span class="section-tag">Portfolio Highlights</span>
+                <h2 class="heading">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Real-world applications built with modern engineering practices</p>
+            </div>
+
+            <div class="projects-container">
+                <!-- Project 1: NewSpot -->
+                <div class="projects-card glass-panel">
+                    <div class="img-container">
+                        <img src="./images/NewSpot.png" alt="NewSpot News Aggregator Application" loading="lazy">
+                        <div class="project-overlay-badge">News Aggregator</div>
+                    </div>
+                    <div class="img-content">
+                        <h4>NewSpot</h4>
+                        <p>
+                            A modern news aggregation platform delivering the latest headlines from trusted global
+                            sources into one intuitive interface with instant category filtering across Tech, Business,
+                            Sports, Entertainment, and World.
+                        </p>
+                        <div class="tech-used">
+                            <span class="badge">React JS</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">REST API</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">Responsive UI</span>
+                        </div>
+                        <div class="links-divs">
+                            <a class="btn btn-outline" target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/Vamshi-Kasturi/NewSpot">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+                                href="https://newspot.vercel.app/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Secure Vault -->
+                <div class="projects-card glass-panel">
+                    <div class="img-container">
+                        <img src="./images/SecureVault.png" alt="Secure Vault Encrypted File Storage System"
+                            loading="lazy">
+                        <div class="project-overlay-badge">Security & Storage</div>
+                    </div>
+                    <div class="img-content">
+                        <h4>Secure Vault</h4>
+                        <p>
+                            A robust full-stack file storage system featuring encrypted uploads, Role-Based Access
+                            Control (RBAC), JWT authentication, and secure file sharing architecture engineered for
+                            enterprise privacy.
+                        </p>
+                        <div class="tech-used">
+                            <span class="badge">React</span>
+                            <span class="badge">Node.js</span>
+                            <span class="badge">Express.js</span>
+                            <span class="badge">MongoDB</span>
+                            <span class="badge">JWT</span>
+                            <span class="badge">AES-256</span>
+                        </div>
+                        <div class="links-divs">
+                            <a class="btn btn-outline" target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/Vamshi-Kasturi/SecureVault">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+                                href="https://securevault-frontend-o34p.onrender.com/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: ChronoAI -->
+                <div class="projects-card glass-panel">
+                    <div class="img-container">
+                        <img src="./images/ChronoAI.png" alt="ChronoAI Time Management Assistant" loading="lazy">
+                        <div class="project-overlay-badge">AI & Automation</div>
+                    </div>
+                    <div class="img-content">
+                        <h4>ChronoAI</h4>
+                        <p>
+                            An AI-driven intelligent scheduling assistant powered by Gemini AI and automation pipelines.
+                            Automatically parses user priorities, generates tailored calendar schedules, and delivers
+                            email summaries.
+                        </p>
+                        <div class="tech-used">
+                            <span class="badge">Gemini AI</span>
+                            <span class="badge">ActivePieces / n8n</span>
+                            <span class="badge">Google Workspace</span>
+                            <span class="badge">Prompt Eng</span>
+                        </div>
+                        <div class="links-divs">
+                            <a class="btn btn-outline" target="_blank" rel="noopener noreferrer"
+                                href="https://cloud.activepieces.com/templates/zJPB1FbtPdh24rSzXc2cL">
+                                <i class="fa-solid fa-diagram-project"></i> Workflow
+                            </a>
+                            <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+                                href="https://forms.gle/Rzyq9VTpYL5RQwyb9">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Try Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: WearCart -->
+                <div class="projects-card glass-panel">
+                    <div class="img-container">
+                        <img src="./images/WearCart.png" alt="WearCart E-Commerce Platform" loading="lazy">
+                        <div class="project-overlay-badge">E-Commerce</div>
+                    </div>
+                    <div class="img-content">
+                        <h4>WearCart</h4>
+                        <p>
+                            A responsive online e-commerce storefront delivering structured product catalogs, filtered
+                            search, seasonal promotional deals, cart UX, and mobile-optimized checkout workflows.
+                        </p>
+                        <div class="tech-used">
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">Bootstrap</span>
+                            <span class="badge">UI/UX</span>
+                        </div>
+                        <div class="links-divs">
+                            <a class="btn btn-outline" target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/Vamshi-Kasturi/wearcart">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+                                href="https://wearcart.vercel.app/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Personal Portfolio -->
+                <div class="projects-card glass-panel">
+                    <div class="img-container">
+                        <img src="./images/Portfolio.png" alt="Vamshi Kasturi Portfolio Website" loading="lazy">
+                        <div class="project-overlay-badge">Personal Portfolio</div>
+                    </div>
+                    <div class="img-content">
+                        <h4>Portfolio Website</h4>
+                        <p>
+                            A high-performance modern developer portfolio showcasing projects, verified credentials, and
+                            interactive skill matrix with responsive glassmorphic UI and smooth animations.
+                        </p>
+                        <div class="tech-used">
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">Glassmorphism</span>
+                            <span class="badge">ScrollReveal</span>
+                        </div>
+                        <div class="links-divs">
+                            <a class="btn btn-outline" target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/Vamshi-Kasturi/Portfolio">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+                                href="https://portfolio-kasturivamshis-projects.vercel.app/">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="heading">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Have a project idea, an internship opportunity, or want to say hi? Reach
+                    out!</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Information Cards -->
+                <div class="contact-info-panel glass-panel">
+                    <h3>Contact Information</h3>
+                    <p class="contact-lead">Feel free to message me directly through any of these channels:</p>
+
+                    <div class="info-items-list">
+                        <a href="mailto:kasturivamshi884@gmail.com" class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">Email Me</span>
+                                <span class="info-val">kasturivamshi884@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/918897634760?text=Hi%20Vamshi,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+                            target="_blank" rel="noopener noreferrer" class="info-card">
+                            <div class="info-icon whatsapp-color">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">WhatsApp Chat</span>
+                                <span class="info-val">+91 88976 34760</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/vamshi-kasturi/" target="_blank" rel="noopener noreferrer"
+                            class="info-card">
+                            <div class="info-icon linkedin-color">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">LinkedIn</span>
+                                <span class="info-val">linkedin.com/in/vamshi-kasturi</span>
+                            </div>
+                        </a>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">Location</span>
+                                <span class="info-val">India (Open to Remote & Relocation)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability-box">
+                        <span class="pulse-dot"></span>
+                        <span>Currently seeking Software Engineering Internships and Full-Stack Roles</span>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-panel glass-panel">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="form" id="contact-form">
+                        <input type="hidden" name="access_key" value="10a1130e-3587-40b9-90bd-b5ca159985c5">
+                        <input type="hidden" name="subject" value="New Portfolio Contact Submission">
+
+                        <div class="input-box">
+                            <div class="field-group">
+                                <label for="fullName">Your Name</label>
+                                <input type="text" id="fullName" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="field-group">
+                                <label for="emailAddress">Your Email</label>
+                                <input type="email" id="emailAddress" name="email" placeholder="john@example.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="field-group">
+                                <label for="mobileNumber">Phone / Mobile (Optional)</label>
+                                <input type="tel" id="mobileNumber" name="phone" placeholder="+91 98765 43210">
+                            </div>
+                            <div class="field-group">
+                                <label for="emailSubject">Subject</label>
+                                <input type="text" id="emailSubject" name="subject_topic"
+                                    placeholder="Project inquiry / Opportunity" required>
+                            </div>
+                        </div>
+
+                        <div class="field-group textarea-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="6"
+                                placeholder="Hi Vamshi, I'd like to talk about..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                            <span class="btn-text"><i class="fa-regular fa-paper-plane"></i> Send Message</span>
+                            <span class="btn-loader" style="display: none;"><i
+                                    class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+                        </button>
+
+                        <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer" id="footer">
-        <div class="footer-content">
-            <p> Copyright &copy; <span id="span-year"> </span> | All Rights Reserved </p>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-mark">&lt;VK/&gt;</span>
+                    <span class="logo-text">Vamshi Kasturi</span>
+                </a>
+                <p>Full-Stack Developer focused on building clean, high-performance web products.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Connect With Me</h4>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/Vamshi-Kasturi" target="_blank" rel="noopener noreferrer"
+                        title="GitHub"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vamshi-kasturi/" target="_blank" rel="noopener noreferrer"
+                        title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                    <a href="mailto:kasturivamshi884@gmail.com" title="Email"><i class="bx bx-envelope"></i></a>
+                    <a href="https://wa.me/918897634760" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/_thiz_vamshi_/" target="_blank" rel="noopener noreferrer"
+                        title="Instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="credits">
-            <p>Made with ❤️ by <a href="https://www.linkedin.com/in/vamshi-kasturi/" target="_blank"> Vamshi
-                    Kasturi</a> </p>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy; <span id="span-year"></span> <strong>Vamshi Kasturi</strong>. All Rights Reserved.</p>
+            <p class="credits">Crafted with modern HTML, CSS & JS.</p>
         </div>
     </footer>
 
-    <div class="footer-iconTop">
-        <a href="#"> <i class="fa-solid fa-arrow-up"></i> </a>
+    <!-- Back to Top Floating Button -->
+    <div class="footer-iconTop" id="backToTop">
+        <a href="#home" aria-label="Back to Top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
     </div>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body>
 
 </html>
